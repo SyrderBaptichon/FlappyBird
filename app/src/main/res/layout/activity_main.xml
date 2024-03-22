@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.example.flappybird.GameView
+        android:id="@+id/game_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/text_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="50sp"
+        android:text="0"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20px"/>
+    <Button
+        android:id="@+id/start_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="start"
+        android:padding="5px"
+        android:layout_centerInParent="true"
+        android:background="#ffff"
+        android:textColor="#000000"/>
+    <RelativeLayout
+        android:id="@+id/rl_game_over"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/txt_game_over"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="game over"
+            android:textSize="50sp"
+            android:layout_centerInParent="true"
+            android:textColor="#ff00"/>
+        <TextView
+            android:id="@+id/text_score_over"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="100sp"
+            android:textColor="#ff00"
+            android:layout_marginTop="50px"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/text_best_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="best score: 0"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/text_score_over"
+            android:layout_marginTop="30px"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tap to play"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/txt_game_over"
+            android:layout_marginTop="20px"
+            android:textColor="#182C9A"/>
+    </RelativeLayout>
+</RelativeLayout>
